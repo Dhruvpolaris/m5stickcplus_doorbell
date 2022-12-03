@@ -7,7 +7,7 @@
 
 ## Screenshots
 - Working
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/Dhruvpolaris/m5stickcplus_doorbell/blob/main/m5_doorbell_working.png)
 
 - Sequence Diagram
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/Dhruvpolaris/m5stickcplus_doorbell/blob/main/m5_doorbell_sequence.png)
