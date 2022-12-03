@@ -3,8 +3,8 @@
 #include <HTTPClient.h>
 
 // Update these with values suitable for your network.
-const char* ssid = "Dhruva Phulsundar";
-const char* password = "winterishere";
+const char* ssid = "<Enter your WiFi SSID (name)>";
+const char* password = "<WiFi Password>";
 
 WiFiClient espClient;
 
@@ -68,17 +68,11 @@ void loop() {
     M5.update();  // Read the press state of the key.
     if (M5.BtnA.wasReleased()) { 
 
-          //Slack
+          //IFTT - Slack Post Request
           HTTPClient http;
-          http.begin("https://maker.ifttt.com/trigger/DoorBell/json/with/key/bjxklz-g1FQmlJIkSXqLjTpcZUNmhXIglVWSJ1wcOjG");
+          http.begin("<ENTER THE IFTTT WebHook URL HERE>");
           http.GET();
           http.end();
-
-          // //Email
-          // HTTPClient http2;
-          // http2.begin("https://maker.ifttt.com/trigger/DoorBell_2/json/with/key/bjxklz-g1FQmlJIkSXqLjTpcZUNmhXIglVWSJ1wcOjG");
-          // http2.GET();
-          // http2.end();
 
           M5.Lcd.fillScreen(BLACK);
           M5.Lcd.setTextSize(2.8);
